@@ -9,6 +9,32 @@
 <link rel="alternate" hreflang="en" href="https://humanuniversity.com.br/human-global-aesthetics-program/en/">
 <meta property="og:url" content="https://humanuniversity.com.br/human-global-aesthetics-program/pt/">
 <link rel="icon" href="../favicon.svg">
+<!-- Meta Pixel -->
+<script>
+(function(){
+  if (location.hostname !== 'humanuniversity.com.br') return;
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '763641686526398');
+  fbq('track', 'PageView');
+  // Every WhatsApp button counts as a Contact; eventID lets a future server-side
+  // Conversions API event be deduplicated against this one.
+  document.addEventListener('click', function(e){
+    var a = e.target.closest && e.target.closest('a.wa');
+    if (!a || !window.fbq) return;
+    var id = 'wa-' + Date.now() + '-' + Math.random().toString(36).slice(2, 8);
+    fbq('track', 'Contact', {
+      content_name: 'Human Global Aesthetics Program · Miami 2026',
+      content_category: 'WhatsApp',
+      language: document.documentElement.lang
+    }, {eventID: id});
+  }, true);
+})();
+</script>
+<!-- End Meta Pixel -->
 <title>Human Global Aesthetics Program</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="Human Global Aesthetics Program · Imersão internacional em dermatologia e cirurgia cosmética com Dr. Ivan Rollemberg e Dr. Daniel Garcia. Miami, 18 de novembro de 2026.">
@@ -335,6 +361,7 @@ footer{background:var(--graphite);border-top:1px solid var(--line-soft);padding-
 </style>
 </head>
 <body>
+<noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=763641686526398&ev=PageView&noscript=1"></noscript>
 <header class="nav">
   <div class="wrap">
     <a class="brand" href="#topo" aria-label="Human Clinic · início">
